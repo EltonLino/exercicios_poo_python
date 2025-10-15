@@ -6,7 +6,10 @@ class Livro:
         self._disponivel = True
 
 
-    def descricao_do_livro(self):
+    def __str__(self):
         return f"Informações do Livro\nTítulo: {self._titulo}\nAutor: {self._autor}\nAno de publicação: {self._ano_publicacao}"
+    
+    def emprestar_livro(self):
+        self._disponivel = False
 
     
